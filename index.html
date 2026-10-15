@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha Lista de Livros</title>
+  <meta name="description" content="Lista de livros que ainda faltam na minha biblioteca, para o amigo secreto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#lista">Ir para a lista</a>
+
+  <header class="topo">
+    <!-- PERSONALIZE: coloque seu nome ou uma foto aqui, se quiser -->
+    <h1>Minha Lista de Livros <span aria-hidden="true">📚</span></h1>
+    <p class="intro">Estou aumentando minha biblioteca e preparei esta lista com os livros que ainda faltam na minha coleção. Se você me tirou no amigo secreto, fique à vontade para escolher qualquer um deles! Obrigado por me ajudar a completar minhas estantes.</p>
+    <p class="total"><strong id="total">0</strong> livros na lista, em <strong id="total-col">0</strong> coleções</p>
+    <p class="aviso">Todos os títulos desta lista já possuem edição publicada no Brasil. A disponibilidade pode variar de uma loja para outra.</p>
+    <button type="button" id="compartilhar" class="btn">Compartilhar lista</button>
+  </header>
+
+  <section class="filtros" aria-label="Busca e filtros">
+    <label>Buscar por título ou autor
+      <input type="search" id="busca" placeholder="Ex.: Sanderson">
+    </label>
+    <label>Coleção
+      <select id="f-colecao"></select>
+    </label>
+    <label>Gênero
+      <select id="f-genero"></select>
+    </label>
+    <label>Ordenar
+      <select id="ordem">
+        <option value="colecao">Por coleção</option>
+        <option value="colecao-az">Coleções de A a Z</option>
+        <option value="titulo">Título de A a Z</option>
+      </select>
+    </label>
+    <button type="button" id="limpar" class="btn btn-sec">Limpar filtros</button>
+  </section>
+
+  <main id="lista" tabindex="-1">
+    <p id="contador" class="contador" role="status" aria-live="polite"></p>
+    <div id="catalogo"></div>
+    <p id="vazio" class="vazio" hidden>Nenhum livro encontrado com esses filtros. Tente outro nome ou clique em “Limpar filtros”.</p>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito com carinho e muitos livros. 📚</p>
+    <p class="peq">As capas e marcas pertencem aos respectivos titulares e são utilizadas apenas para identificação dos livros.</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
