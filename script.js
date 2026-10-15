@@ -41,8 +41,8 @@ const COLECOES = [
   { nome: "Elantris", autor: "Brandon Sanderson", genero: "Fantasia", livros: [
     { t: "Elantris" } ] },
   { nome: "As Crônicas da Quasinoite", autor: "Jay Kristoff", genero: "Fantasia", livros: [
-    { t: "Nevernight: A Sombra do Corvo", v: 1 }, { t: "Godsgrave: O Espetáculo Sangrento", v: 2 },
-    { t: "Darkdawn: As Cinzas da República", v: 3 } ] },
+    { t: "A Sombra do Corvo", v: 1 }, { t: "O Espetáculo Sangrento", v: 2 },
+    { t: "As Cinzas da República", v: 3 } ] },
   { nome: "A Rainha Vermelha", autor: "Victoria Aveyard", genero: "Fantasia", livros: [
     { t: "A Rainha Vermelha", v: 1 }, { t: "Espada de Vidro", v: 2 },
     { t: "A Prisão do Rei", v: 3 }, { t: "Tempestade de Guerra", v: 4 },
